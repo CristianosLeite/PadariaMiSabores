@@ -1,0 +1,2 @@
+        self.background_cadastros = QGridLayout(self.page_2)
+        self.background_cadastros.setObjectName(u"background_cadastros")
