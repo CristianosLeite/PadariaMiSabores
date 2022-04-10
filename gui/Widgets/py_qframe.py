@@ -39,7 +39,8 @@ class PyQFrame(QFrame):
 
         qp.end()
 
-    def draw_icon(self, qp, image, rect, color):
+    @staticmethod
+    def draw_icon(qp, image, rect, color):
         # Format  Path
         app_path = os.path.abspath(os.getcwd())
         folder = "gui/icons"

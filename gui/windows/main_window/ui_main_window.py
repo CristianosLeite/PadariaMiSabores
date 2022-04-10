@@ -2,7 +2,7 @@
 from qt_core import *
 
 # Import Pages
-from gui.ui_pages import Ui_StackedWidget
+from gui.ui_pages import UiStackedWidget
 
 # Import custom widgets
 from gui.Widgets.py_push_button import PyPushButton
@@ -11,6 +11,46 @@ from gui.Widgets.py_qframe import PyQFrame
 
 # MainWindow
 class UiMainWindow(object):
+    def __init__(self):
+        self.cadastrar_produto = None
+        self.pesquisar_produto = None
+        self.logo = None
+        self.ui_pages = None
+        self.pages = None
+        self.bottom_right_label = None
+        self.size_grip = None
+        self.bottom_center_spacer = None
+        self.bottom_left_label = None
+        self.bottom_bar_layout = None
+        self.bottom_bar = None
+        self.top_right_label = None
+        self.user_button = None
+        self.top_center_spacer = None
+        self.close_button = None
+        self.maxim_button = None
+        self.minim_button = None
+        self.top_left_label = None
+        self.top_bar_layout = None
+        self.content_layout = None
+        self.top_bar = None
+        self.left_menu_label_version = None
+        self.settings_btn = None
+        self.left_menu_bottom_layout = None
+        self.left_menu_bottom_frame = None
+        self.left_menu_spacer = None
+        self.btn_4 = None
+        self.btn_3 = None
+        self.btn_2 = None
+        self.btn_1 = None
+        self.toggle_button = None
+        self.left_menu_top_layout = None
+        self.left_menu_top_frame = None
+        self.left_menu_layout = None
+        self.content = None
+        self.left_menu = None
+        self.main_layout = None
+        self.central_frame = None
+
     def setup_ui(self, parent):
         if not parent.objectName():
             parent.setObjectName("MainWindow")
@@ -110,6 +150,7 @@ class UiMainWindow(object):
 
         # Label Version
         self.left_menu_label_version = QLabel("v1.0.0")
+        # noinspection PyTypeChecker
         self.left_menu_label_version.setAlignment(Qt.AlignCenter)
         self.left_menu_label_version.setMinimumHeight(30)
         self.left_menu_label_version.setMaximumHeight(30)
@@ -140,7 +181,7 @@ class UiMainWindow(object):
             maximum_width=30,
             btn_color="#28232d",
             icon_path="icon_minimize"
-            )
+        )
 
         # Max Button
         self.maxim_button = PyPushButton(
@@ -149,7 +190,7 @@ class UiMainWindow(object):
             maximum_width=30,
             btn_color="#28232d",
             icon_path="icon_maximize"
-            )
+        )
 
         # Close Button
         self.close_button = PyPushButton(
@@ -158,12 +199,12 @@ class UiMainWindow(object):
             maximum_width=30,
             btn_color="#28232d",
             icon_path="icon_close"
-            )
+        )
 
         # Top center Spacer
         self.top_center_spacer = QSpacerItem(20, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        #User Button
+        # User Button
         self.user_button = PyPushButton(
             cursor=Qt.PointingHandCursor,
             maximum_width=30, heigth=30,
@@ -198,7 +239,7 @@ class UiMainWindow(object):
             icon_path="cil-size-grip"
 
         )
-        #self.size_gripe.setStyleSheet("")
+        # self.size_gripe.setStyleSheet("")
 
         # Right BottomLabel
         self.bottom_right_label = QLabel("© 2021")
@@ -207,8 +248,8 @@ class UiMainWindow(object):
         # Application Pages
         self.pages = QStackedWidget()
         self.pages.setStyleSheet("font-size: 12pt; color: #6272a4")
-        self.ui_pages = Ui_StackedWidget()
-        self.ui_pages.setupUi(self.pages)
+        self.ui_pages = UiStackedWidget()
+        self.ui_pages.setup_ui(self.pages)
         self.pages.setCurrentWidget(self.ui_pages.page_1)
 
         # Logo inicial
@@ -219,7 +260,6 @@ class UiMainWindow(object):
             icon_color="rgb"
         )
 
-
         # Cadastro Produtos / Pesquisar Produtos
         self.pesquisar_produto = PyPushButton(
             text="Pesquisar",
@@ -228,7 +268,6 @@ class UiMainWindow(object):
             maximum_width=200,
             icon_path="cil-magnifying-glass"
         )
-
 
         # Cadastro Produtos / Cadastrar Produtos
         self.cadastrar_produto = PyPushButton(
@@ -250,7 +289,7 @@ class UiMainWindow(object):
         self.top_bar_layout.addWidget(self.user_button)
         self.top_bar_layout.addWidget(self.top_right_label)
         self.bottom_bar_layout.addWidget(self.bottom_left_label)
-        self.bottom_bar_layout.addItem(self.bottom_center_spacer) 
+        self.bottom_bar_layout.addItem(self.bottom_center_spacer)
         self.bottom_bar_layout.addWidget(self.bottom_right_label)
         self.bottom_bar_layout.addWidget(self.size_grip)
         self.left_menu_layout.addWidget(self.left_menu_top_frame)

@@ -68,8 +68,7 @@ class PyPushButton(QPushButton):
             btn_color="#44475a",
             btn_hover="#4f5368",
             btn_pressed="#282a36",
-            is_active=False,
-            cursor=Qt.ArrowCursor
+            is_active=False
     ):
 
         style = f"""
@@ -115,7 +114,8 @@ class PyPushButton(QPushButton):
 
         qp.end()
 
-    def draw_icon(self, qp, image, rect, color):
+    @staticmethod
+    def draw_icon(qp, image, rect, color):
         # Format  Path
         app_path = os.path.abspath(os.getcwd())
         folder = "gui/icons"

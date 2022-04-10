@@ -1,25 +1,263 @@
 # -*- coding: utf-8 -*-
 
-################################################################################
-## Form generated from reading UI file 'ui_pagesjOZxfL.ui'
-##
-## Created by: Qt User Interface Compiler version 6.1.0
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 from PySide6.QtCore import *
 from PySide6.QtGui import *
 from PySide6.QtWidgets import *
 
 
-class Ui_StackedWidget(object):
-    def setupUi(self, StackedWidget):
-        if not StackedWidget.objectName():
-            StackedWidget.setObjectName(u"StackedWidget")
-        StackedWidget.resize(864, 518)
-        StackedWidget.setToolTipDuration(2)
-        self.actionLogo = QAction(StackedWidget)
+class UiStackedWidget(object):
+    def __init__(self):
+        self.page_6 = None
+        self.page_5 = None
+        self.page_4 = None
+        self.page_3 = None
+        self.verticalLayout_24 = None
+        self.frame_3 = None
+        self.horizontalLayout_2 = None
+        self.frame = None
+        self.pushButton_6 = None
+        self.pushButton_5 = None
+        self.pushButton_4 = None
+        self.textEdit_2 = None
+        self.horizontalLayout_10 = None
+        self.groupBox_4 = None
+        self.horizontalLayout_9 = None
+        self.frame_23 = None
+        self.lineEdit_14 = None
+        self.label_15 = None
+        self.verticalLayout_17 = None
+        self.frame_22 = None
+        self.lineEdit_13 = None
+        self.label_14 = None
+        self.verticalLayout_16 = None
+        self.frame_21 = None
+        self.lineEdit_12 = None
+        self.label_13 = None
+        self.verticalLayout_15 = None
+        self.frame_20 = None
+        self.horizontalLayout_8 = None
+        self.groupBox_3 = None
+        self.lineEdit_11 = None
+        self.label_12 = None
+        self.verticalLayout_14 = None
+        self.frame_19 = None
+        self.lineEdit_10 = None
+        self.label_11 = None
+        self.verticalLayout_13 = None
+        self.frame_18 = None
+        self.lineEdit_9 = None
+        self.label_10 = None
+        self.verticalLayout_12 = None
+        self.frame_17 = None
+        self.horizontalLayout_7 = None
+        self.frame_16 = None
+        self.lineEdit_8 = None
+        self.label_9 = None
+        self.verticalLayout_11 = None
+        self.frame_15 = None
+        self.verticalLayout_10 = None
+        self.frame_13 = None
+        self.horizontalLayout_11 = None
+        self.tab_3 = None
+        self.pushButton_9 = None
+        self.pushButton_10 = None
+        self.pushButton_8 = None
+        self.horizontalLayout_38 = None
+        self.frame_48 = None
+        self.groupBox_7 = None
+        self.horizontalLayout_35 = None
+        self.frame_41 = None
+        self.lineEdit_34 = None
+        self.label_45 = None
+        self.lineEdit_33 = None
+        self.label_44 = None
+        self.horizontalLayout_27 = None
+        self.frame_47 = None
+        self.lineEdit_32 = None
+        self.label_43 = None
+        self.lineEdit_31 = None
+        self.label_42 = None
+        self.horizontalLayout_28 = None
+        self.frame_46 = None
+        self.lineEdit_30 = None
+        self.label_41 = None
+        self.lineEdit_29 = None
+        self.label_40 = None
+        self.horizontalLayout_29 = None
+        self.frame_44 = None
+        self.lineEdit_28 = None
+        self.label_39 = None
+        self.lineEdit_27 = None
+        self.label_38 = None
+        self.horizontalLayout_30 = None
+        self.frame_45 = None
+        self.lineEdit_26 = None
+        self.label_37 = None
+        self.lineEdit_25 = None
+        self.label_36 = None
+        self.horizontalLayout_31 = None
+        self.frame_43 = None
+        self.lineEdit_24 = None
+        self.label_35 = None
+        self.lineEdit_23 = None
+        self.label_34 = None
+        self.horizontalLayout_32 = None
+        self.frame_42 = None
+        self.verticalLayout_22 = None
+        self.groupBox_8 = None
+        self.horizontalLayout_34 = None
+        self.frame_40 = None
+        self.verticalLayout_18 = None
+        self.page_8 = None
+        self.pushButton_7 = None
+        self.pushButton_11 = None
+        self.horizontalLayout_33 = None
+        self.frame_49 = None
+        self.textEdit_3 = None
+        self.horizontalLayout_37 = None
+        self.groupBox_9 = None
+        self.comboBox_10 = None
+        self.label_33 = None
+        self.horizontalLayout_26 = None
+        self.frame_39 = None
+        self.comboBox_9 = None
+        self.label_32 = None
+        self.horizontalLayout_25 = None
+        self.frame_38 = None
+        self.comboBox_8 = None
+        self.label_31 = None
+        self.horizontalLayout_24 = None
+        self.frame_37 = None
+        self.comboBox_7 = None
+        self.label_30 = None
+        self.horizontalLayout_23 = None
+        self.frame_36 = None
+        self.comboBox_6 = None
+        self.label_29 = None
+        self.horizontalLayout_22 = None
+        self.frame_35 = None
+        self.comboBox_5 = None
+        self.label_28 = None
+        self.horizontalLayout_21 = None
+        self.frame_34 = None
+        self.lineEdit_22 = None
+        self.label_27 = None
+        self.comboBox_4 = None
+        self.label_26 = None
+        self.lineEdit_21 = None
+        self.horizontalLayout_20 = None
+        self.frame_33 = None
+        self.verticalLayout_20 = None
+        self.groupBox_6 = None
+        self.horizontalLayout_36 = None
+        self.frame_32 = None
+        self.comboBox_3 = None
+        self.label_25 = None
+        self.label_24 = None
+        self.horizontalLayout_19 = None
+        self.frame_31 = None
+        self.lineEdit_20 = None
+        self.label_23 = None
+        self.lineEdit_19 = None
+        self.label_22 = None
+        self.horizontalLayout_18 = None
+        self.frame_30 = None
+        self.comboBox_2 = None
+        self.label_21 = None
+        self.comboBox = None
+        self.label_20 = None
+        self.horizontalLayout_17 = None
+        self.frame_29 = None
+        self.lineEdit_18 = None
+        self.label_19 = None
+        self.horizontalLayout_16 = None
+        self.frame_28 = None
+        self.lineEdit_17 = None
+        self.label_18 = None
+        self.lineEdit_16 = None
+        self.label_17 = None
+        self.horizontalLayout_15 = None
+        self.frame_27 = None
+        self.radioButton = None
+        self.lineEdit_15 = None
+        self.label_16 = None
+        self.horizontalLayout_14 = None
+        self.frame_26 = None
+        self.verticalLayout_19 = None
+        self.groupBox_5 = None
+        self.horizontalLayout_12 = None
+        self.frame_24 = None
+        self.verticalLayout_23 = None
+        self.page_7 = None
+        self.horizontalLayout_40 = None
+        self.horizontalLayout_39 = None
+        self.horizontalLayout_41 = None
+        self.page = None
+        self.stackedWidget = None
+        self.horizontalLayout_13 = None
+        self.tab_2 = None
+        self.pushButton = None
+        self.pushButton_2 = None
+        self.pushButton_3 = None
+        self.textEdit = None
+        self.horizontalLayout_3 = None
+        self.groupBox_2 = None
+        self.horizontalLayout_4 = None
+        self.lineEdit_6 = None
+        self.lineEdit_5 = None
+        self.label_6 = None
+        self.frame_10 = None
+        self.lineEdit_4 = None
+        self.label_5 = None
+        self.verticalLayout_6 = None
+        self.frame_7 = None
+        self.horizontalLayout_6 = None
+        self.groupBox = None
+        self.lineEdit_7 = None
+        self.label_8 = None
+        self.verticalLayout_9 = None
+        self.frame_14 = None
+        self.lineEdit_3 = None
+        self.label_4 = None
+        self.verticalLayout_5 = None
+        self.frame_9 = None
+        self.lineEdit_2 = None
+        self.label_3 = None
+        self.frame_11 = None
+        self.verticalLayout_7 = None
+        self.frame_12 = None
+        self.frame_12 = None
+        self.verticalLayout_8 = None
+        self.label_7 = None
+        self.lineEdit = None
+        self.frame_4 = None
+        self.verticalLayout = None
+        self.frame_2 = None
+        self.page_2 = None
+        self.gridLayout = None
+        self.page_1 = None
+        self.actionLogo = None
+        self.label = None
+        self.horizontalLayout = None
+        self.verticalLayout_27 = None
+        self.tabWidget = None
+        self.tab = None
+        self.verticalLayout = None
+        self.frame_5 = None
+        self.verticalLayout_2 = None
+        self.verticalLayout_3 = None
+        self.label_2 = None
+        self.frame_6 = None
+        self.horizontalLayout_5 = None
+        self.frame_8 = None
+        self.verticalLayout_4 = None
+
+    def setup_ui(self, stacked_widget):
+        if not stacked_widget.objectName():
+            stacked_widget.setObjectName(u"stacked_widget")
+        stacked_widget.resize(864, 518)
+        stacked_widget.setToolTipDuration(2)
+        self.actionLogo = QAction(stacked_widget)
         self.actionLogo.setObjectName(u"actionLogo")
         icon = QIcon()
         icon.addFile(u"Logo.PNG", QSize(), QIcon.Normal, QIcon.Off)
@@ -38,7 +276,7 @@ class Ui_StackedWidget(object):
 
         self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
 
-        StackedWidget.addWidget(self.page_1)
+        stacked_widget.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.horizontalLayout = QHBoxLayout(self.page_2)
@@ -80,7 +318,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_3.addWidget(self.lineEdit)
 
-
         self.verticalLayout_2.addWidget(self.frame_4)
 
         self.frame_6 = QFrame(self.frame_5)
@@ -106,7 +343,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_4.addWidget(self.lineEdit_2)
 
-
         self.horizontalLayout_5.addWidget(self.frame_8)
 
         self.frame_9 = QFrame(self.frame_6)
@@ -125,7 +361,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_3.setMinimumSize(QSize(0, 22))
 
         self.verticalLayout_5.addWidget(self.lineEdit_3)
-
 
         self.horizontalLayout_5.addWidget(self.frame_9)
 
@@ -146,9 +381,7 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_9.addWidget(self.lineEdit_7)
 
-
         self.horizontalLayout_5.addWidget(self.frame_14)
-
 
         self.verticalLayout_2.addWidget(self.frame_6)
 
@@ -176,7 +409,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_6.addWidget(self.lineEdit_4)
 
-
         self.horizontalLayout_6.addWidget(self.frame_7)
 
         self.frame_10 = QFrame(self.groupBox)
@@ -201,7 +433,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_7.addWidget(self.lineEdit_5)
 
-
         self.horizontalLayout_6.addWidget(self.frame_10)
 
         self.frame_12 = QFrame(self.groupBox)
@@ -223,9 +454,7 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_8.addWidget(self.lineEdit_6)
 
-
         self.horizontalLayout_6.addWidget(self.frame_12)
-
 
         self.verticalLayout_2.addWidget(self.groupBox)
 
@@ -245,7 +474,6 @@ class Ui_StackedWidget(object):
         self.textEdit.setMinimumSize(QSize(0, 0))
 
         self.horizontalLayout_3.addWidget(self.textEdit)
-
 
         self.horizontalLayout_4.addWidget(self.groupBox_2)
 
@@ -267,9 +495,7 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton)
 
-
         self.verticalLayout_2.addWidget(self.frame_11)
-
 
         self.verticalLayout.addWidget(self.frame_5)
 
@@ -337,7 +563,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_14.addWidget(self.radioButton)
 
-
         self.verticalLayout_19.addWidget(self.frame_26)
 
         self.frame_27 = QFrame(self.groupBox_5)
@@ -371,7 +596,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_15.addWidget(self.lineEdit_17)
 
-
         self.verticalLayout_19.addWidget(self.frame_27)
 
         self.frame_28 = QFrame(self.groupBox_5)
@@ -391,7 +615,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_18.setMinimumSize(QSize(0, 22))
 
         self.horizontalLayout_16.addWidget(self.lineEdit_18)
-
 
         self.verticalLayout_19.addWidget(self.frame_28)
 
@@ -429,7 +652,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_17.addWidget(self.comboBox_2)
 
-
         self.verticalLayout_19.addWidget(self.frame_29)
 
         self.frame_30 = QFrame(self.groupBox_5)
@@ -461,7 +683,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_20.setMinimumSize(QSize(0, 22))
 
         self.horizontalLayout_18.addWidget(self.lineEdit_20)
-
 
         self.verticalLayout_19.addWidget(self.frame_30)
 
@@ -498,7 +719,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_19.addWidget(self.comboBox_3)
 
-
         self.verticalLayout_19.addWidget(self.frame_31)
 
         self.frame_32 = QFrame(self.groupBox_5)
@@ -510,7 +730,6 @@ class Ui_StackedWidget(object):
         self.horizontalLayout_36.setObjectName(u"horizontalLayout_36")
 
         self.verticalLayout_19.addWidget(self.frame_32)
-
 
         self.horizontalLayout_12.addWidget(self.groupBox_5)
 
@@ -533,10 +752,8 @@ class Ui_StackedWidget(object):
         self.comboBox_4 = QComboBox(self.frame_33)
         self.comboBox_4.setObjectName(u"comboBox_4")
         self.comboBox_4.setMinimumSize(QSize(0, 22))
-        
 
         self.horizontalLayout_20.addWidget(self.comboBox_4)
-
 
         self.label_27 = QLabel(self.frame_33)
         self.label_27.setObjectName(u"label_27")
@@ -549,7 +766,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_22.setMinimumSize(QSize(0, 22))
 
         self.horizontalLayout_20.addWidget(self.lineEdit_22)
-
 
         self.verticalLayout_20.addWidget(self.frame_33)
 
@@ -571,7 +787,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_21.addWidget(self.comboBox_5)
 
-
         self.verticalLayout_20.addWidget(self.frame_34)
 
         self.frame_35 = QFrame(self.groupBox_6)
@@ -591,7 +806,6 @@ class Ui_StackedWidget(object):
         self.comboBox_6.setMinimumSize(QSize(0, 22))
 
         self.horizontalLayout_22.addWidget(self.comboBox_6)
-
 
         self.verticalLayout_20.addWidget(self.frame_35)
 
@@ -613,7 +827,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_23.addWidget(self.comboBox_7)
 
-
         self.verticalLayout_20.addWidget(self.frame_36)
 
         self.frame_37 = QFrame(self.groupBox_6)
@@ -633,7 +846,6 @@ class Ui_StackedWidget(object):
         self.comboBox_8.setMinimumSize(QSize(0, 22))
 
         self.horizontalLayout_24.addWidget(self.comboBox_8)
-
 
         self.verticalLayout_20.addWidget(self.frame_37)
 
@@ -655,7 +867,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_25.addWidget(self.comboBox_9)
 
-
         self.verticalLayout_20.addWidget(self.frame_38)
 
         self.frame_39 = QFrame(self.groupBox_6)
@@ -676,12 +887,9 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_26.addWidget(self.comboBox_10)
 
-
         self.verticalLayout_20.addWidget(self.frame_39)
 
-
         self.horizontalLayout_12.addWidget(self.groupBox_6)
-
 
         self.verticalLayout_23.addWidget(self.frame_24)
 
@@ -717,9 +925,7 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_33.addWidget(self.pushButton_7)
 
-
         self.horizontalLayout_37.addWidget(self.frame_49)
-
 
         self.verticalLayout_23.addWidget(self.groupBox_9)
 
@@ -753,7 +959,12 @@ class Ui_StackedWidget(object):
         self.lineEdit_23.setObjectName(u"lineEdit_23")
         self.lineEdit_23.setToolTipDuration(0)
         self.lineEdit_23.setLayoutDirection(Qt.RightToLeft)
-        self.lineEdit_23.setInputMethodHints(Qt.ImhDigitsOnly|Qt.ImhFormattedNumbersOnly|Qt.ImhNoPredictiveText|Qt.ImhNoTextHandles|Qt.ImhPreferNumbers)
+        self.lineEdit_23.setInputMethodHints(
+            Qt.ImhDigitsOnly
+            | Qt.ImhFormattedNumbersOnly
+            | Qt.ImhNoPredictiveText
+            | Qt.ImhNoTextHandles
+            | Qt.ImhPreferNumbers)
 
         self.horizontalLayout_32.addWidget(self.lineEdit_23)
 
@@ -766,7 +977,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_24.setObjectName(u"lineEdit_24")
 
         self.horizontalLayout_32.addWidget(self.lineEdit_24)
-
 
         self.verticalLayout_22.addWidget(self.frame_42)
 
@@ -796,7 +1006,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_31.addWidget(self.lineEdit_26)
 
-
         self.verticalLayout_22.addWidget(self.frame_43)
 
         self.frame_45 = QFrame(self.groupBox_8)
@@ -824,7 +1033,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_28.setObjectName(u"lineEdit_28")
 
         self.horizontalLayout_30.addWidget(self.lineEdit_28)
-
 
         self.verticalLayout_22.addWidget(self.frame_45)
 
@@ -854,7 +1062,6 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_29.addWidget(self.lineEdit_30)
 
-
         self.verticalLayout_22.addWidget(self.frame_44)
 
         self.frame_46 = QFrame(self.groupBox_8)
@@ -882,7 +1089,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_32.setObjectName(u"lineEdit_32")
 
         self.horizontalLayout_28.addWidget(self.lineEdit_32)
-
 
         self.verticalLayout_22.addWidget(self.frame_46)
 
@@ -912,12 +1118,9 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_27.addWidget(self.lineEdit_34)
 
-
         self.verticalLayout_22.addWidget(self.frame_47)
 
-
         self.horizontalLayout_34.addWidget(self.groupBox_8)
-
 
         self.verticalLayout_18.addWidget(self.frame_40)
 
@@ -953,9 +1156,7 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_38.addWidget(self.pushButton_9)
 
-
         self.horizontalLayout_35.addWidget(self.frame_48)
-
 
         self.verticalLayout_18.addWidget(self.frame_41)
 
@@ -991,7 +1192,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_11.addWidget(self.lineEdit_8)
 
-
         self.verticalLayout_10.addWidget(self.frame_15)
 
         self.frame_16 = QFrame(self.frame_13)
@@ -1017,7 +1217,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_12.addWidget(self.lineEdit_9)
 
-
         self.horizontalLayout_7.addWidget(self.frame_17)
 
         self.frame_18 = QFrame(self.frame_16)
@@ -1036,7 +1235,6 @@ class Ui_StackedWidget(object):
         self.lineEdit_10.setMinimumSize(QSize(0, 22))
 
         self.verticalLayout_13.addWidget(self.lineEdit_10)
-
 
         self.horizontalLayout_7.addWidget(self.frame_18)
 
@@ -1057,9 +1255,7 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_14.addWidget(self.lineEdit_11)
 
-
         self.horizontalLayout_7.addWidget(self.frame_19)
-
 
         self.verticalLayout_10.addWidget(self.frame_16)
 
@@ -1087,7 +1283,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_15.addWidget(self.lineEdit_12)
 
-
         self.horizontalLayout_8.addWidget(self.frame_20)
 
         self.frame_21 = QFrame(self.groupBox_3)
@@ -1112,7 +1307,6 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_16.addWidget(self.lineEdit_13)
 
-
         self.horizontalLayout_8.addWidget(self.frame_21)
 
         self.frame_22 = QFrame(self.groupBox_3)
@@ -1134,9 +1328,7 @@ class Ui_StackedWidget(object):
 
         self.verticalLayout_17.addWidget(self.lineEdit_14)
 
-
         self.horizontalLayout_8.addWidget(self.frame_22)
-
 
         self.verticalLayout_10.addWidget(self.groupBox_3)
 
@@ -1156,7 +1348,6 @@ class Ui_StackedWidget(object):
         self.textEdit_2.setMinimumSize(QSize(0, 0))
 
         self.horizontalLayout_10.addWidget(self.textEdit_2)
-
 
         self.horizontalLayout_9.addWidget(self.groupBox_4)
 
@@ -1178,16 +1369,13 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_9.addWidget(self.pushButton_6)
 
-
         self.verticalLayout_10.addWidget(self.frame_23)
-
 
         self.horizontalLayout_11.addWidget(self.frame_13)
 
         self.tabWidget.addTab(self.tab_3, "")
 
         self.verticalLayout_27.addWidget(self.tabWidget)
-
 
         self.horizontalLayout.addWidget(self.frame_2)
 
@@ -1207,107 +1395,110 @@ class Ui_StackedWidget(object):
 
         self.horizontalLayout_2.addWidget(self.frame_3)
 
-
         self.horizontalLayout.addWidget(self.frame)
 
-        StackedWidget.addWidget(self.page_2)
+        stacked_widget.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
-        StackedWidget.addWidget(self.page_3)
+        stacked_widget.addWidget(self.page_3)
         self.page_4 = QWidget()
         self.page_4.setObjectName(u"page_4")
-        StackedWidget.addWidget(self.page_4)
+        stacked_widget.addWidget(self.page_4)
         self.page_5 = QWidget()
         self.page_5.setObjectName(u"page_5")
-        StackedWidget.addWidget(self.page_5)
+        stacked_widget.addWidget(self.page_5)
         self.page_6 = QWidget()
         self.page_6.setObjectName(u"page_6")
-        StackedWidget.addWidget(self.page_6)
+        stacked_widget.addWidget(self.page_6)
 
-        self.retranslateUi(StackedWidget)
+        self.retranslateUi(stacked_widget)
 
-        StackedWidget.setCurrentIndex(1)
+        stacked_widget.setCurrentIndex(1)
         self.tabWidget.setCurrentIndex(1)
         self.stackedWidget.setCurrentIndex(0)
 
+        QMetaObject.connectSlotsByName(stacked_widget)
 
-        QMetaObject.connectSlotsByName(StackedWidget)
-    # setupUi
+    # setup_ui
 
-    def retranslateUi(self, StackedWidget):
-        StackedWidget.setWindowTitle(QCoreApplication.translate("StackedWidget", u"StackedWidget", None))
-        self.actionLogo.setText(QCoreApplication.translate("StackedWidget", u"Logo", None))
+    # noinspection PyTypeChecker
+    def retranslateUi(self, stacked_widget):
+        stacked_widget.setWindowTitle(QCoreApplication.translate("stacked_widget", u"stacked_widget", None))
+        self.actionLogo.setText(QCoreApplication.translate("stacked_widget", u"Logo", None))
         self.label.setText("")
-        self.label_2.setText(QCoreApplication.translate("StackedWidget", u"Nome", None))
-        self.label_3.setText(QCoreApplication.translate("StackedWidget", u"Telefone", None))
-        self.label_4.setText(QCoreApplication.translate("StackedWidget", u"CPF / CNPJ", None))
-        self.label_8.setText(QCoreApplication.translate("StackedWidget", u"E-mail", None))
-        self.groupBox.setTitle(QCoreApplication.translate("StackedWidget", u"Endere\u00e7o", None))
-        self.label_5.setText(QCoreApplication.translate("StackedWidget", u"Rua", None))
-        self.label_6.setText(QCoreApplication.translate("StackedWidget", u"n\u00ba", None))
-        self.label_7.setText(QCoreApplication.translate("StackedWidget", u"Bairro", None))
-        self.groupBox_2.setTitle(QCoreApplication.translate("StackedWidget", u"Obs:", None))
-        self.pushButton_3.setText(QCoreApplication.translate("StackedWidget", u"Limpar", None))
-        self.pushButton_2.setText(QCoreApplication.translate("StackedWidget", u"Pesquisar", None))
-        self.pushButton.setText(QCoreApplication.translate("StackedWidget", u"Inserir", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("StackedWidget", u"Clientes", None))
-        self.groupBox_5.setTitle(QCoreApplication.translate("StackedWidget", u"B\u00e1sico", None))
-        self.label_16.setText(QCoreApplication.translate("StackedWidget", u"Produto ID", None))
-        self.radioButton.setText(QCoreApplication.translate("StackedWidget", u"Ativo", None))
-        self.label_17.setText(QCoreApplication.translate("StackedWidget", u"Cod. Produto", None))
-        self.label_18.setText(QCoreApplication.translate("StackedWidget", u"Cod. Barras", None))
-        self.label_19.setText(QCoreApplication.translate("StackedWidget", u"Descri\u00e7\u00e3o", None))
-        self.label_20.setText(QCoreApplication.translate("StackedWidget", u"Unidade comercial", None))
-        self.label_21.setText(QCoreApplication.translate("StackedWidget", u"Unidade tribut\u00e1vel", None))
-        self.label_22.setText(QCoreApplication.translate("StackedWidget", u"Marca", None))
-        self.label_23.setText(QCoreApplication.translate("StackedWidget", u"Modelo", None))
-        self.label_24.setText(QCoreApplication.translate("StackedWidget", u"Fabricante", None))
-        self.label_25.setText(QCoreApplication.translate("StackedWidget", u"Fornecedor", None))
-        self.groupBox_6.setTitle(QCoreApplication.translate("StackedWidget", u"Informa\u00e7\u00f5es Tribut\u00e1rias", None))
-        self.label_26.setText(QCoreApplication.translate("StackedWidget", u"NCM", None))
-        self.label_27.setText(QCoreApplication.translate("StackedWidget", u"CEST", None))
-        self.label_28.setText(QCoreApplication.translate("StackedWidget", u"Origem", None))
-        self.label_29.setText(QCoreApplication.translate("StackedWidget", u"Tipo de Produto", None))
-        self.label_30.setText(QCoreApplication.translate("StackedWidget", u"Tipo de Opera\u00e7\u00e3o", None))
-        self.label_31.setText(QCoreApplication.translate("StackedWidget", u"Opera\u00e7\u00e3o PIS/COFINS", None))
-        self.label_32.setText(QCoreApplication.translate("StackedWidget", u"Natureza da Receita", None))
-        self.label_33.setText(QCoreApplication.translate("StackedWidget", u"Tipo de Opera\u00e7\u00e3o IPI", None))
-        self.groupBox_9.setTitle(QCoreApplication.translate("StackedWidget", u"Obs:", None))
-        self.pushButton_11.setText(QCoreApplication.translate("StackedWidget", u"Limpar", None))
-        self.pushButton_7.setText(QCoreApplication.translate("StackedWidget", u"Avan\u00e7ar", None))
-        self.groupBox_8.setTitle(QCoreApplication.translate("StackedWidget", u"Valores", None))
-        self.label_34.setText(QCoreApplication.translate("StackedWidget", u"Valor de compra unit\u00e1rio", None))
+        self.label_2.setText(QCoreApplication.translate("stacked_widget", u"Nome", None))
+        self.label_3.setText(QCoreApplication.translate("stacked_widget", u"Telefone", None))
+        self.label_4.setText(QCoreApplication.translate("stacked_widget", u"CPF / CNPJ", None))
+        self.label_8.setText(QCoreApplication.translate("stacked_widget", u"E-mail", None))
+        self.groupBox.setTitle(QCoreApplication.translate("stacked_widget", u"Endere\u00e7o", None))
+        self.label_5.setText(QCoreApplication.translate("stacked_widget", u"Rua", None))
+        self.label_6.setText(QCoreApplication.translate("stacked_widget", u"n\u00ba", None))
+        self.label_7.setText(QCoreApplication.translate("stacked_widget", u"Bairro", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("stacked_widget", u"Obs:", None))
+        self.pushButton_3.setText(QCoreApplication.translate("stacked_widget", u"Limpar", None))
+        self.pushButton_2.setText(QCoreApplication.translate("stacked_widget", u"Pesquisar", None))
+        self.pushButton.setText(QCoreApplication.translate("stacked_widget", u"Inserir", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab),
+                                  QCoreApplication.translate("stacked_widget", u"Clientes", None))
+        self.groupBox_5.setTitle(QCoreApplication.translate("stacked_widget", u"B\u00e1sico", None))
+        self.label_16.setText(QCoreApplication.translate("stacked_widget", u"Produto ID", None))
+        self.radioButton.setText(QCoreApplication.translate("stacked_widget", u"Ativo", None))
+        self.label_17.setText(QCoreApplication.translate("stacked_widget", u"Cod. Produto", None))
+        self.label_18.setText(QCoreApplication.translate("stacked_widget", u"Cod. Barras", None))
+        self.label_19.setText(QCoreApplication.translate("stacked_widget", u"Descri\u00e7\u00e3o", None))
+        self.label_20.setText(QCoreApplication.translate("stacked_widget", u"Unidade comercial", None))
+        self.label_21.setText(QCoreApplication.translate("stacked_widget", u"Unidade tribut\u00e1vel", None))
+        self.label_22.setText(QCoreApplication.translate("stacked_widget", u"Marca", None))
+        self.label_23.setText(QCoreApplication.translate("stacked_widget", u"Modelo", None))
+        self.label_24.setText(QCoreApplication.translate("stacked_widget", u"Fabricante", None))
+        self.label_25.setText(QCoreApplication.translate("stacked_widget", u"Fornecedor", None))
+        self.groupBox_6.setTitle(
+            QCoreApplication.translate("stacked_widget", u"Informa\u00e7\u00f5es Tribut\u00e1rias", None))
+        self.label_26.setText(QCoreApplication.translate("stacked_widget", u"NCM", None))
+        self.label_27.setText(QCoreApplication.translate("stacked_widget", u"CEST", None))
+        self.label_28.setText(QCoreApplication.translate("stacked_widget", u"Origem", None))
+        self.label_29.setText(QCoreApplication.translate("stacked_widget", u"Tipo de Produto", None))
+        self.label_30.setText(QCoreApplication.translate("stacked_widget", u"Tipo de Opera\u00e7\u00e3o", None))
+        self.label_31.setText(QCoreApplication.translate("stacked_widget", u"Opera\u00e7\u00e3o PIS/COFINS", None))
+        self.label_32.setText(QCoreApplication.translate("stacked_widget", u"Natureza da Receita", None))
+        self.label_33.setText(QCoreApplication.translate("stacked_widget", u"Tipo de Opera\u00e7\u00e3o IPI", None))
+        self.groupBox_9.setTitle(QCoreApplication.translate("stacked_widget", u"Obs:", None))
+        self.pushButton_11.setText(QCoreApplication.translate("stacked_widget", u"Limpar", None))
+        self.pushButton_7.setText(QCoreApplication.translate("stacked_widget", u"Avan\u00e7ar", None))
+        self.groupBox_8.setTitle(QCoreApplication.translate("stacked_widget", u"Valores", None))
+        self.label_34.setText(QCoreApplication.translate("stacked_widget", u"Valor de compra unit\u00e1rio", None))
         self.lineEdit_23.setInputMask("")
         self.lineEdit_23.setText("")
-        self.lineEdit_23.setPlaceholderText(QCoreApplication.translate("StackedWidget", u"0,00", None))
-        self.label_35.setText(QCoreApplication.translate("StackedWidget", u"Custo de Venda", None))
-        self.label_36.setText(QCoreApplication.translate("StackedWidget", u"Desconto na compra", None))
-        self.label_37.setText(QCoreApplication.translate("StackedWidget", u"Custo adicional na compra", None))
-        self.label_38.setText(QCoreApplication.translate("StackedWidget", u"Frete da compra", None))
-        self.label_39.setText(QCoreApplication.translate("StackedWidget", u"Margem de lucro", None))
-        self.label_40.setText(QCoreApplication.translate("StackedWidget", u"IPI compra", None))
-        self.label_41.setText(QCoreApplication.translate("StackedWidget", u"Lucro de venda (R$)", None))
-        self.label_42.setText(QCoreApplication.translate("StackedWidget", u"Desconto a vista", None))
-        self.label_43.setText(QCoreApplication.translate("StackedWidget", u"Valor min. de venda", None))
-        self.label_44.setText(QCoreApplication.translate("StackedWidget", u"Estoque", None))
-        self.label_45.setText(QCoreApplication.translate("StackedWidget", u"Pre\u00e7o de venda", None))
-        self.groupBox_7.setTitle(QCoreApplication.translate("StackedWidget", u"GroupBox", None))
-        self.pushButton_8.setText(QCoreApplication.translate("StackedWidget", u"Voltar", None))
-        self.pushButton_10.setText(QCoreApplication.translate("StackedWidget", u"Limpar", None))
-        self.pushButton_9.setText(QCoreApplication.translate("StackedWidget", u"Inserir", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("StackedWidget", u"Produtos", None))
-        self.label_9.setText(QCoreApplication.translate("StackedWidget", u"Fornecedor", None))
-        self.label_10.setText(QCoreApplication.translate("StackedWidget", u"Telefone", None))
-        self.label_11.setText(QCoreApplication.translate("StackedWidget", u"CPF / CNPJ", None))
-        self.label_12.setText(QCoreApplication.translate("StackedWidget", u"E-mail", None))
-        self.groupBox_3.setTitle(QCoreApplication.translate("StackedWidget", u"Endere\u00e7o", None))
-        self.label_13.setText(QCoreApplication.translate("StackedWidget", u"Rua", None))
-        self.label_14.setText(QCoreApplication.translate("StackedWidget", u"n\u00ba", None))
-        self.label_15.setText(QCoreApplication.translate("StackedWidget", u"Bairro", None))
-        self.groupBox_4.setTitle(QCoreApplication.translate("StackedWidget", u"Obs:", None))
-        self.pushButton_4.setText(QCoreApplication.translate("StackedWidget", u"Limpar", None))
-        self.pushButton_5.setText(QCoreApplication.translate("StackedWidget", u"Pesquisar", None))
-        self.pushButton_6.setText(QCoreApplication.translate("StackedWidget", u"Inserir", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("StackedWidget", u"Fornecedores", None))
+        self.lineEdit_23.setPlaceholderText(QCoreApplication.translate("stacked_widget", u"0,00", None))
+        self.label_35.setText(QCoreApplication.translate("stacked_widget", u"Custo de Venda", None))
+        self.label_36.setText(QCoreApplication.translate("stacked_widget", u"Desconto na compra", None))
+        self.label_37.setText(QCoreApplication.translate("stacked_widget", u"Custo adicional na compra", None))
+        self.label_38.setText(QCoreApplication.translate("stacked_widget", u"Frete da compra", None))
+        self.label_39.setText(QCoreApplication.translate("stacked_widget", u"Margem de lucro", None))
+        self.label_40.setText(QCoreApplication.translate("stacked_widget", u"IPI compra", None))
+        self.label_41.setText(QCoreApplication.translate("stacked_widget", u"Lucro de venda (R$)", None))
+        self.label_42.setText(QCoreApplication.translate("stacked_widget", u"Desconto a vista", None))
+        self.label_43.setText(QCoreApplication.translate("stacked_widget", u"Valor min. de venda", None))
+        self.label_44.setText(QCoreApplication.translate("stacked_widget", u"Estoque", None))
+        self.label_45.setText(QCoreApplication.translate("stacked_widget", u"Pre\u00e7o de venda", None))
+        self.groupBox_7.setTitle(QCoreApplication.translate("stacked_widget", u"GroupBox", None))
+        self.pushButton_8.setText(QCoreApplication.translate("stacked_widget", u"Voltar", None))
+        self.pushButton_10.setText(QCoreApplication.translate("stacked_widget", u"Limpar", None))
+        self.pushButton_9.setText(QCoreApplication.translate("stacked_widget", u"Inserir", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2),
+                                  QCoreApplication.translate("stacked_widget", u"Produtos", None))
+        self.label_9.setText(QCoreApplication.translate("stacked_widget", u"Fornecedor", None))
+        self.label_10.setText(QCoreApplication.translate("stacked_widget", u"Telefone", None))
+        self.label_11.setText(QCoreApplication.translate("stacked_widget", u"CPF / CNPJ", None))
+        self.label_12.setText(QCoreApplication.translate("stacked_widget", u"E-mail", None))
+        self.groupBox_3.setTitle(QCoreApplication.translate("stacked_widget", u"Endere\u00e7o", None))
+        self.label_13.setText(QCoreApplication.translate("stacked_widget", u"Rua", None))
+        self.label_14.setText(QCoreApplication.translate("stacked_widget", u"n\u00ba", None))
+        self.label_15.setText(QCoreApplication.translate("stacked_widget", u"Bairro", None))
+        self.groupBox_4.setTitle(QCoreApplication.translate("stacked_widget", u"Obs:", None))
+        self.pushButton_4.setText(QCoreApplication.translate("stacked_widget", u"Limpar", None))
+        self.pushButton_5.setText(QCoreApplication.translate("stacked_widget", u"Pesquisar", None))
+        self.pushButton_6.setText(QCoreApplication.translate("stacked_widget", u"Inserir", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3),
+                                  QCoreApplication.translate("stacked_widget", u"Fornecedores", None))
     # retranslateUi
-
