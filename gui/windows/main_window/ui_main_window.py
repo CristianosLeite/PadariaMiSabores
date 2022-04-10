@@ -10,6 +10,7 @@ from gui.Widgets.py_qframe import PyQFrame
 
 
 # MainWindow
+# noinspection PyArgumentList,PyTypeChecker
 class UiMainWindow(object):
     def __init__(self):
         self.cadastrar_produto = None
