@@ -5,6 +5,7 @@ from PySide6.QtGui import *
 from PySide6.QtWidgets import *
 
 
+# noinspection PyArgumentList
 class UiStackedWidget(object):
     def __init__(self):
         self.page_6 = None
