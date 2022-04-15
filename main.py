@@ -61,14 +61,21 @@ class MainWindow(QMainWindow):
         # self.ui.size_grip.clicked.connect(lambda: self.size_grip())
 
         # Move the Window
-        def move_window(e):
+        def mouse_press_event(self):
+            p = self.globalPosition()
+            globalPos = p.toPoint()
+            self.dragPos = globalPos
+
+
+        def move_window(event):
             # Detecta se a janela não está expandida
             if self.isMaximized() is False:
-                if e.buttons() == Qt.LeftButton:
-                    self.move(self.pos() + e.pos())
-                    e.accept()
-
-        self.ui.top_bar.mouseMoveEvent = move_window
+                if event.buttons() == Qt.LeftButton:
+                    self.move(event.pos() + self.pos())
+                    
+        
+       
+        self.mouseMoveEvent = move_window
 
         # Size_grip
         self.ui.size_grip.grabMouse = QSizeGrip(self.ui.size_grip)

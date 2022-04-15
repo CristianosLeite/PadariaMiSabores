@@ -128,7 +128,7 @@ class PyPushButton(QPushButton):
         painter.setCompositionMode(QPainter.CompositionMode_SourceIn)
         painter.fillRect(icon.rect(), color)
         qp.drawPixmap(
-            (rect.width() - icon.width()) / 14,
+            (rect.width() - icon.width()) / icon.width() + 5,
             (rect.height() - icon.height()) / 2,
             icon
         )
