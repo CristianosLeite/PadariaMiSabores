@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
         for btn in self.ui.left_menu.findChildren(QPushButton):
             try:
                 btn.set_active(False)
-            except exception:
+            except Exception:
                 pass
 
     def toggle_button(self):
