@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\gui",
+    "\\gui\\Widgets",
+    "\\Modules"
   ],
   "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
